@@ -73,7 +73,7 @@ exports.modifyThing = (req, res, next) => {
         });
  };
 
-exports.getAllStuff = (req, res, next) => {
+exports.getAllThings = (req, res, next) => {
   Thing.find().then(
     (things) => {
       res.status(200).json(things);
